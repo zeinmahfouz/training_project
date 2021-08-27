@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Navigation bar Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="landing-page">
+        <div class="navbar">
+            <a href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
+            <a href="#"><i class="fa fa-fw fa-info-circle"></i> About Us</a> 
+            <a href="../Pages/mainLogin.html"><i class="fa fa-fw fa-user"></i> Main Login</a>
+            <a href="mainCreatAccount.html"><i class="fa fa-fw fa-user"></i> Main Creat</a>
+        </div>
+    </div>
+
+
+
+    
+    <div class="user-creat-form">
+        <h1 id="specificpar">Create Company Account</h1>
+        <div class="user-container">
+            
+            <form action="compSignUp.asp" method="POST">
+
+                <input type="text" name="companyName" placeholder=" Company Name"> 
+
+                <!-- <select id="book" name="Book" style="padding: 15px 40px 15px 40px; "> -->
+                <select id="book" name="kindOfBusiness" style="height: 50px;width: 200px;">
+                    <optgroup label="kind business" >
+                        <option value="B1">IT</option>
+                        <option value="B2">Network</option>
+                        <option value="B2">Web design</option>
+                        <option value="B2">Software software</option>
+                        <option value="B2">Machine learning</option>
+                    </optgroup>
+                </select>
+
+                <input type="text" name="companyCity"  placeholder=" City" > 
+
+                <!-- <input type="text"  placeholder=" private or governmental">  -->
+                <select id="book" name="kindOfCompany" style="padding: 15px 40px 15px 40px; ">kind_of_company
+                    <optgroup label="kind of company" >
+                        <option value="Private">Private</option>
+                        <option value="Governmental">Governmental</option>
+                    </optgroup>
+                </select>
+
+                <input type="text" name="adminName" placeholder=" Admin name"> 
+
+                <input type="number" name="companyPhone"  placeholder=" Company Phone"> 
+
+                <input type="password" name="companyPass" placeholder=" Password">
+
+                <input type="password" name="companyPass" placeholder=" Password Again"> 
+                <br><br>
+                <hr style="background-color: #fff; width: 100%">
+                
+                <input id="specificInput" type="submit" value="Create"> 
+                
+                
+            </form>
+        </div>
+    </div>
+
+    <!-- Start Footer  -->
+    <div class="footer">
+        <div class="container">
+            <p>We Are Social</p>
+            <div class="social-icons">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <p class="copyright">&copy; 2021 <span></span> All Right Reserved</p>
+        </div>
+    </div>
+    <!-- End  Footer  -->
+
+
+
+
+
+</body>
+</html>
